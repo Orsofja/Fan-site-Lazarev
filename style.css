@@ -7,7 +7,7 @@
 header {
     background-color: #76041D;
     display: flex;
-    height: 9vh;
+    height: 8vh;
     align-items: center;
     justify-content: flex-end;
 }
@@ -26,58 +26,6 @@ li>a {
     color: white;
     font-size: 20px;
 }
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url(Images/lazarevbanner.jpg);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px black solid;
-    width: 350px;
-    height: 55vh;
-    background-color: #EFE6E6;
-    border-radius: 30px;
-}
-form>h2 {
-    font-size: 30px;
-}
-.login-choise {
-    display: flex;
-    flex-direction: row;
-}
-.choise {
-    margin: 13px;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    background-color: transparent;
-}
-.login-input {
-    margin: 20px;
-    width: 225px;
-    padding: 6px 7.5px;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-}
-.login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.login>* {
-    margin: 10px;
-}
 .banner {
     background-image: url(Images/lazarevbanner.jpg);
     background-position-x: center;
@@ -85,18 +33,18 @@ form>h2 {
     background-size: cover;
     color: white;
     font-size: 30px;
-    height: 90vh;
+    height: 92vh;
 }
 .gradient-container {
     height: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    width: 55%;
-    background-image: linear-gradient(to right, rgba(54,6,18,1), rgba(255,0,0,0));
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(54,6,18,1) 0%, rgba(255,0,0,0) 50%);
 }
 .incontainer {
-    padding: 9% 4%;
+    padding: 5% 4%;
 }
 section {
     font-size: 25px;
@@ -140,9 +88,9 @@ p>a {
     padding: 7vh 0;
 }
 .song-img {
-    width: 270px;
+    width: 20%;
 }
-button {
+.btn {
     background-image: linear-gradient(to right, #9C1134, #360612);
     color: white;
     font-size: 23px;
@@ -154,4 +102,53 @@ button {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
     width: fit-content;
 }
-
+.gap {
+    height: 10vh;
+    background: linear-gradient(0deg, #eaeaea 0%, #76041d 40%, #76041d 60%, #efe6e6 100%);
+}
+#showman {
+    background-color: #EFE6E6;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    padding-bottom: 7vh;
+}
+.img-showman {
+    width: 450px;
+    height: 300px;
+}
+#tour {
+    display: flex;
+    background-color: #efe6e6;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.tour {
+    padding: 3vh 1vw 0 2%;
+    height: 85vh;
+    width: 23%;
+    font-size: 20px;
+}
+.finder {
+    margin: 20px 0;
+    width: 225px;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+#map {
+    height: 85vh;
+    width: 77%;
+}
+footer {
+    background-color: #360612;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+footer>*{
+    padding: 1vh 2%;
+}
