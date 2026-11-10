@@ -26,6 +26,9 @@ li>a {
     color: white;
     font-size: 20px;
 }
+main {
+    background-color: #360612;
+}
 .banner {
     background-image: url(Images/lazarevbanner.jpg);
     background-position-x: center;
