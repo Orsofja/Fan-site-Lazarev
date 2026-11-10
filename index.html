@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.10.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.10.0/ol.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -48,13 +50,28 @@
             </div>
             <p>Информация на момент ноября 2026 года</p>
         </section>
-        <section>
-            <h2>Лучший концертный тур</h2>
-            <p></p>
+        <section id="showman">
+            <div class="about-container">
+                <h2>Лучший концертный тур</h2>
+                <p><b>«ШОУМЕН»</b> — это шоу мирового уровня, в котором сочетаются музыка, эмоции, технологии и энергия живого исполнения. 
+                    Это история о силе артиста, который на протяжении более двух часов держит внимание многотысячного зала, доказывая, 
+                    что настоящий шоумен это прежде всего искренность, талант и безграничная отдача своему зрителю. 
+                    Тур уже охватил десятки городов России и ближнего зарубежья и продолжает расширять свою географию.</p>
+            </div>
+            <img src="Images/showman.png" class="img-showman">
         </section>
-        <section></section>
+        <section id="tour">
+            <div class="tour">
+                <h2>Найди свой город в туре!</h2>
+                <p>Введи свой город и узнай, когда у Сергея Лазарева будет концерт поблизости!</p>
+                <input type="text" class="finder" placeholder="Поиск">
+            </div>
+            <div id="map"></div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Fan-site-Lazarev @ by Sofja Orlova <b>2026</b></p>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
