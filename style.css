@@ -9,10 +9,13 @@ header {
     display: flex;
     height: 8vh;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 nav {
     width: 60%
+}
+.nav-small {
+    display: none;
 }
 ul {
     display: flex;
@@ -54,22 +57,21 @@ section {
 }
 #about {
     background-color: #EFE6E6;
-    display: flex;
-    padding: 2%;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1% 2% 2% 2%;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 .about {
-    background-color: #76041D;
-    padding-bottom: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 img {
     border-radius: 20px;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .img-lazer{
-    width: 350px;
+    width: 320px;
 }
 .about-container>p {
     font-weight: 500;
@@ -88,13 +90,13 @@ p>a {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 7vh 0;
+    padding: 5vh 0;
 }
 .song-img {
-    width: 20%;
+    width: 20vw;
 }
 .btn {
-    background-image: linear-gradient(to right, #9C1134, #360612);
+    background-image: linear-gradient(90deg, #9C1134, #360612);
     color: white;
     font-size: 23px;
     padding: 5px 25px;
@@ -111,14 +113,11 @@ p>a {
 }
 #showman {
     background-color: #EFE6E6;
-    display: flex;
     padding: 2%;
-    justify-content: space-between;
     padding-bottom: 7vh;
 }
 .img-showman {
-    width: 450px;
-    height: 300px;
+    width: 35vw;
 }
 #tour {
     display: flex;
@@ -134,7 +133,7 @@ p>a {
 }
 .finder {
     margin: 20px 0;
-    width: 225px;
+    width: 18vw;
     padding: 8px 12px;
     font-size: 20px;
     font-weight: 600;
@@ -154,4 +153,129 @@ footer {
 }
 footer>*{
     padding: 1vh 2%;
+}
+@media (max-width: 1025px){
+    nav {
+        width: 70%
+    }
+    .banner {
+        height: 80vh;
+    }
+    section{
+        font-size: 20px;
+    }
+    .img-lazer{
+        width: 300px;
+    }
+    .img-showman {
+        width: 40vw;
+    }
+    .tour {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1025px) and (orientation: portrait) {
+    .songs {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3vh 0;
+    }
+    .song-img {
+        width: 40vw;
+        margin: 2vh 1vh;
+    }
+}
+@media (max-width: 769px) {
+    section{
+        font-size: 18px;
+    }
+    .banner {
+        height: 70vh;
+    }
+    .img-lazer, .img-showman{
+        width: 40vw;
+        margin: 1vh 0;
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .song-img {
+        width: 270px;
+    }
+    .finder {
+        font-size: 17px;
+        margin: 13px 0;
+    }
+}
+@media (max-width: 769px) and (orientation: portrait) {
+    #tour {
+        flex-direction: column;
+    }
+    .gradient-container {
+        background-image: linear-gradient(0deg, rgba(54,6,18,1) 0%, rgba(255,0,0,0) 50%);
+    }
+    .tour {
+        height: 18vh;
+        width: 97%;
+    }
+    #map {
+        width: 100%;
+        height: 60vh;
+    }
+}
+@media (max-width: 549px){
+    .nav-base {
+        display: none;
+    }
+    .nav-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 75%;
+        padding: 0;
+        position: absolute;
+        background: #76041D;
+        transform: translateX(-100%);
+    }
+    .nav-small-item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+    .nav-small-icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stick {
+        width: 80%;
+        height: 5px;
+        background: white;
+    }
+    .banner {
+        font-size: 23px;
+        height: 63vh;
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-lazer, .img-showman{
+        width: 65vw;
+        margin: 2vh 0;
+    }
+    .tour, .finder {
+        font-size: 13px;
+    }
 }

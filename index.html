@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ol@v10.10.0/dist/ol.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.10.0/ol.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <nav>
+        <nav class="nav-base">
             <ul>
-                <li><a href="#about">О персоне</a></li>
-                <li><a href="#songs">Релизы</a></li>
-                <li><a href="#">Тур "ШОУМЕН"</a></li>
+                <li><a class="nav-base-item" href="#about">О персоне</a></li>
+                <li><a class="nav-base-item" href="#songs">Релизы</a></li>
+                <li><a class="nav-base-item" href="#showman">Тур "ШОУМЕН"</a></li>
+            </ul>
+        </nav>
+        <div class="nav-small-icon">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+        <nav class="nav-small">
+            <ul>
+                <li><a class="nav-small-item" href="#about">О персоне</a></li>
+                <li><a class="nav-small-item" href="#songs">Релизы</a></li>
+                <li><a class="nav-small-item" href="#showman">Тур "ШОУМЕН"</a></li>
             </ul>
         </nav>
     </header>
@@ -27,14 +41,14 @@
                 </div>
             </div>
         </section>
-        <section class="about">
-            <div id="about">
+        <section id="about">
+            <h2>Сергей Вячеславович Лазарев</h2>
+            <div class="about">
                 <div class="about-container">
-                    <h2>Сергей Вячеславович Лазарев</h2>
                     <p>Российский певец, актёр театра, кино и озвучивания, телеведущий. Бывший участник поп—группы Smash!! <br>
-    Обладатель множества музыкальных призов. Это многократные награды «Золотого граммофона», телеканалов «Муз-ТВ», Ru.TV и других. <br>
+    Обладатель множества музыкальных призов. Это многократные награды «Золотого граммофона», телеканалов «Муз-ТВ», Ru.TV и других.
     Дважды выступал на международном конкурсе песни «Евровидение» (в 2016 году и в 2019 году), оба раза занял 3-е место. <br>
-    Сергей Лазарев сейчас продолжает один из самых масштабных гастрольных проектов российской сцены — <a href="">концертный тур «ШОУМЕН»</a></p>
+    Сейчас Сергей Лазарев продолжает один из самых масштабных гастрольных проектов российской сцены — <a href="#showman">концертный тур «ШОУМЕН»</a></p>
                     <button class="btn">Узнать больше</button>
                 </div>
                 <img src="Images/lazarev.jpg" class="img-lazer">
@@ -52,14 +66,16 @@
         </section>
         <div class="gap"></div>
         <section id="showman">
-            <div class="about-container">
-                <h2>Лучший концертный тур</h2>
-                <p><b>«ШОУМЕН»</b> — это шоу мирового уровня, в котором сочетаются музыка, эмоции, технологии и энергия живого исполнения. 
-                    Это история о силе артиста, который на протяжении более двух часов держит внимание многотысячного зала, доказывая, 
-                    что настоящий шоумен это прежде всего искренность, талант и безграничная отдача своему зрителю. 
-                    Тур уже охватил десятки городов России и ближнего зарубежья и продолжает расширять свою географию.</p>
+            <h2>Лучший концертный тур</h2>
+            <div class="about">
+                <div class="about-container">
+                    <p><b>«ШОУМЕН»</b> — это шоу мирового уровня, в котором сочетаются музыка, эмоции, технологии и энергия живого исполнения. 
+                        Тур уже охватил десятки городов России и ближнего зарубежья.
+                        Это история о силе артиста, который на протяжении более двух часов держит внимание многотысячного зала, доказывая, 
+                        что настоящий шоумен это прежде всего искренность, талант и безграничная отдача своему зрителю.</p>
+                </div>
+                <img src="Images/showman.png" class="img-showman">
             </div>
-            <img src="Images/showman.png" class="img-showman">
         </section>
         <section id="tour">
             <div class="tour">
