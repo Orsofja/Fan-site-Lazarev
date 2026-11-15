@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: flex-start;
 }
-nav {
+.nav-base {
     width: 60%
 }
 .nav-small {
@@ -155,7 +155,7 @@ footer>*{
     padding: 1vh 2%;
 }
 @media (max-width: 1025px){
-    nav {
+    .nav-base {
         width: 70%
     }
     .banner {
