@@ -230,18 +230,20 @@ footer>*{
     .nav-small {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 75%;
+        justify-content: center;
+        height: 45%;
+        width: 80%;
         padding: 0;
         position: absolute;
-        background: #76041D;
+        margin-top: 3.9vh;
+        background: linear-gradient(90deg, #5a0316 0%, #5a0316a3 60%,  rgba(255,0,0,0) 90%);
         transform: translateX(-100%);
     }
     .nav-small-item {
-        height: 2em;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        padding: 8% 5%;
     }
     .nav_small_item:first-child {
         padding-top: calc(50px + 2em);

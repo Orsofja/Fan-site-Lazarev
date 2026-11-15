@@ -35,21 +35,21 @@ function forward() {
         loop: false
     });
     anime({
-        targets: '.icon',
+        targets: '.nav-small-icon',
         rotate: 90,
         easing: 'easeInOutQuad',
         direction: 'alternate',
         duration: 1000,
         loop: false
     });
-    anime({
-        targets: '.stick',
-        rotate: 180,
-        easing: 'easeInOutQuad',
-        direction: 'alternate',
-        duration: 1000,
-        loop: false
-    });
+    // anime({
+    //     targets: '.stick',
+    //     rotate: 180,
+    //     easing: 'easeInOutQuad',
+    //     direction: 'alternate',
+    //     duration: 1000,
+    //     loop: false
+    // });
     condition = !condition;
 }
 
@@ -63,23 +63,37 @@ function backward() {
         loop: false
     });
     anime({
-        targets: '.icon',
+        targets: '.nav-small-icon',
         rotate: 0,
         easing: 'easeInOutQuad',
         direction: 'alternate',
         duration: 1000,
         loop: false
     });
-    anime({
-        targets: '.stick',
-        rotate: 0,
-        easing: 'easeInOutQuad',
-        direction: 'alternate',
-        duration: 1000,
-        loop: false
-    });
+    // anime({
+    //     targets: '.stick',
+    //     rotate: 0,
+    //     easing: 'easeInOutQuad',
+    //     direction: 'alternate',
+    //     duration: 1000,
+    //     loop: false
+    // });
     condition = !condition;
 }
+
+let links = document.querySelectorAll(".scroll");
+let targetID;
+links.forEach(function (element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log("ok");
+        targetID = element.getAttribute('href');
+        document.querySelector(targetID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+})
 
 navigator.geolocation.getCurrentPosition(function (position) {
     let latitude = position.coords.latitude;
